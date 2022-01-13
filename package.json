@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "NODE_ENV=production TAILWIND_MODE=build webpack ",
-    "watch": "NODE_ENV=development webpack --watch",
+    "build": "webpack ",
+    "watch": "webpack --watch",
     "dev": "yext sites develop"
   },
   "repository": {
