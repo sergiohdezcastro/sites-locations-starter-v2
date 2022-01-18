@@ -1,7 +1,7 @@
 {
     "name": "Yext's Fashion Warehouse",
     "accountId": "",
-    /*Incluyo la api de google*/
+    //Incluyo la api de google
     "googleApiKey": "AIzaSyAodPYrfhTGutznPYZASpgtDIj33AFDP4Y",
     "liveApiKey": ""
 }
