@@ -89,7 +89,8 @@ export function getRequest(request_url, queryString) {
   }
 
   fetch(request_url, { method: "GET", mode: 'cors', headers: new Headers({
-        'Access-Control-Allow-Origin': 'https://master-spoon--destiny--dash-sbx-pgsdemo-com.sbx.preview.pagescdn.com/',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': '*',
     }) })
     .then((res) => res.json())
     .then(function (data) {
