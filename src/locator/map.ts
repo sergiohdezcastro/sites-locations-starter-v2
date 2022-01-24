@@ -14,7 +14,7 @@ let bounds;
 let selectedLocationIndex = -1;
 
 export const map = new google.maps.Map(document.getElementById("map"), {
-  center: { lat: 40.693807, lng: 73.9917 },
+  center: { lat: 40.4165, lng: -3.70256 },
   zoom: zoom,
   styles: [
     // { elementType: "geometry", stylers: [{ color: "#5A6980" }] },
