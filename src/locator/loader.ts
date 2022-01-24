@@ -88,7 +88,9 @@ export function getRequest(request_url, queryString) {
     request_url += "&savedFilterIds=" + savedFilterId;
   }
 
-  fetch(request_url, { method: "GET", mode: 'no-cors' })
+  fetch(request_url, { method: "GET", mode: 'cors', headers: new Headers({
+        'Access-Control-Allow-Origin': '*',
+    }) })
     .then((res) => res.json())
     .then(function (data) {
       if (data.meta.errors && data.meta.errors.length > 0) {
