@@ -33,8 +33,16 @@
             }
             window.mapsLoader = loadScriptAsync("https://maps.googleapis.com/maps/api/js?key={{global.googleApiKey}}&callback=initMaps&libraries=places");
         </script>
+
+        <!-- Pelayo -->
+        {{>Pelayo_head_components}}
+        <!-- Fin Pelayo -->
+
     </head>
     <body>
+
+        {{>Pelayo_header}}
+
         <div class="flex min-h-screen w-full">
             <div class="w-full">
                 {{>nav}}
