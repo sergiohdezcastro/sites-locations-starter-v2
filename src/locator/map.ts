@@ -206,6 +206,7 @@ export function addMarkersToMap(locations) {
       google.maps.event.addListener(marker, "click", function () {
         highlightLocation(index, true, false, marker);
         const urlToOpen = document.getElementsByClassName("result selected")[0].getElementsByClassName("center-column")[0].getElementsByClassName('lp-param-results lp-subparam-cardTitle lp-subparam-cardTitleLinkUrl')[0].getElementsByClassName('name')[0].getElementsByTagName('a')[0].href;
+        alert('test david');
         window.open(urlToOpen);
       });
 
